@@ -1,0 +1,18 @@
+$dark-background: #191414;
+$dark-element: #535353;
+.NavBox{
+    display: flex;
+    background-color: $dark-background;
+    padding: 1rem;
+    height: 30vh;
+    font-size: 3vh;
+    gap: 1vh;
+    
+    a{
+        color: $dark-element;
+    }
+    .title{
+        padding-left: 2vh;
+        // font-size: ;
+    }
+}
