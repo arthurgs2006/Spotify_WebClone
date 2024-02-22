@@ -7,15 +7,15 @@ export default function () {
             <Nav className="card d-flex NavBox">
                 <NavLink href="/" className="">
                     <i className="bi bi-spotify icon"></i>
-                    <span className=" title">Spotify</span>
+                    <b className=" title">Spotify</b>
                 </NavLink>
                 <NavLink href="/" className="">
                     <i className="bi bi-house-fill icon"></i>
-                    <span className="title ">Home</span>
+                    <b className="title ">Home</b>
                 </NavLink>
                 <NavLink href="/search" className=" ">
                     <i className="bi bi-search icon"></i>
-                    <span className="title "  >Search</span>
+                    <b className="title "  >Search</b>
                 </NavLink>
             </Nav>
         </>
