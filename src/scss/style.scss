@@ -1,12 +1,25 @@
 $dark-background: #000;
-body{
+
+body {
     padding-top: 2vh;
     background-color: $dark-background;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
-.LeftArea{
-    width: 55vh;
+.LeftArea {
+    width: 50vh;
     display: flex;
     flex-direction: column;
     gap: 1vh;
+}
+
+.Ad {
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem; 
+    padding-left: 1rem;
+    background: rgb(177, 58, 180);
+    background: linear-gradient(90deg, rgba(177, 58, 180, 1) 0%, rgba(149, 29, 253, 1) 32%, rgba(69, 252, 241, 1) 100%);
 }

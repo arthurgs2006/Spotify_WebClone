@@ -2,33 +2,57 @@ $dark-background: #121212;
 $dark-element: #464444;
 $dark-box-color: #242424;
 $white-text: #FFF;
-.NavBox{
+
+.NavBox {
     display: flex;
     background-color: $dark-background;
     padding: 1rem;
-    
     font-size: 3vh;
     gap: 1vh;
-    
-    a{
+    border-radius: 2vh;
+    max-height:50vh;
+
+    a {
         color: $dark-element;
     }
-    .title{
+
+    .title {
         padding-left: 2vh;
-        // font-size: ;
     }
-    .lowerBox{
-        height: 50vh;
+
+    .lowerBox {
+        height: 10vh;
         display: flex;
     }
-    .navItemPlaylist{
+
+    .navItemPlaylist {
         display: flex;
+        
         justify-content: space-between;
+        // box-shadow: 5px 10px 8px #000000
     }
-    .box{
+
+    .box {
         color: $white-text;
         padding: 1rem;
         border-radius: 2vh;
         background-color: $dark-box-color;
+    }
+
+    .boxArea {
+        max-height: 40vh;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 1vh;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $dark-element;
+            border-radius: 10vh;
+        }
     }
 }

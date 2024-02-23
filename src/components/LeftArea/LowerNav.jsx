@@ -4,7 +4,7 @@ import './style.scss'
 export default function () {
     return (
         <>
-            <Nav className="card d-flex NavBox lowerBox">
+            <div className="card d-flex NavBox lowerBox">
                 <Nav className="navItemPlaylist">
                     <NavItem>
                         <NavLink href="/" className="">
@@ -18,6 +18,7 @@ export default function () {
                         </NavLink>
                     </NavItem>
                 </Nav>
+                <div className="boxArea">
                     <section className="box">
                         <div className="text">
                             <span className="fs-6 fw-bold">Create Your First Playlist</span>
@@ -32,7 +33,8 @@ export default function () {
                         </div>
                         <Button color="light mt-2 rounded-pill"><b className="dark small">Browse podcasts</b></Button>
                     </section>
-            </Nav>
+                </div>
+            </div>
         </>
     )
 }

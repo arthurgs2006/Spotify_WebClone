@@ -2,6 +2,7 @@ import './scss/style.scss'
 import { Container, Col } from 'reactstrap'
 import UpperNav from "./components/LeftArea/UpperNav"
 import LowerNav from './components/LeftArea/LowerNav'
+import SpotifyAD from './components/DownArea/SpotifyAD'
 function App() {
 
   return (
@@ -11,8 +12,7 @@ function App() {
           <UpperNav />
           <LowerNav />
         </div>
-        <Col>
-        </Col>
+        <SpotifyAD />
       </Container>
     </>
   )
