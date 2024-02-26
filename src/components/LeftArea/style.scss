@@ -29,7 +29,6 @@ $white-text: #FFF;
         display: flex;
         
         justify-content: space-between;
-        // box-shadow: 5px 10px 8px #000000
     }
 
     .box {
@@ -54,5 +53,8 @@ $white-text: #FFF;
             background: $dark-element;
             border-radius: 10vh;
         }
+    }
+    .nav-link:hover{
+        color: $white-text;
     }
 }

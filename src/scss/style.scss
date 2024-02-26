@@ -1,7 +1,7 @@
 $dark-background: #000;
 
 body {
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     background-color: $dark-background;
     max-height: 100vh;
     overflow: hidden;
@@ -22,4 +22,18 @@ body {
     padding-left: 1rem;
     background: rgb(177, 58, 180);
     background: linear-gradient(90deg, rgba(177, 58, 180, 1) 0%, rgba(149, 29, 253, 1) 32%, rgba(69, 252, 241, 1) 100%);
+}
+
+.Column{
+    gap: 1vh;
+}
+
+.LinkMenu{
+    background-color: $dark-background;
+}
+
+@media (max-width: 735px) {
+    body{
+        overflow: scroll;
+    }
 }
