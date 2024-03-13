@@ -54,6 +54,15 @@ $white-text: #FFF;
             border-radius: 10vh;
         }
     }
+
+    .linkBox{
+        padding-top: 5vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1vh;
+        padding-bottom: 1vh;
+    }
+
     .nav-link:hover{
         color: $white-text;
     }

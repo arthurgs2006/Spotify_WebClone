@@ -1,4 +1,5 @@
 import { Nav, NavLink, NavItem, Container, Button } from "reactstrap"
+import BoxLinks from "./BoxLinks/BoxLinks"
 import './style.scss'
 
 export default function () {
@@ -34,6 +35,12 @@ export default function () {
                         <Button color="light mt-2 rounded-pill"><b className="dark small">Browse podcasts</b></Button>
                     </section>
                 </div>
+                <Container fluid >
+                    <BoxLinks />
+                    <Button className="btn rounded-pill btn-link text-light border">
+                        <i className="bi bi-globe"></i> <b>English</b>
+                    </Button>
+                </Container>
             </div>
         </>
     )
