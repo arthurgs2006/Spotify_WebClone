@@ -4,11 +4,11 @@ const links = ["Legal", "Safety & Police Center", "Privacy Policy", "Cookies", "
 export default function () {
     return (
         <>
-            <div className="d-flex linkBox">
+            <div className="linkBox container">
                 {links.map((linkName, index) => (
                     <>
-                        <NavLink key={index}>
-                            <span className="h6 d-flex ">
+                        <NavLink key={index} >
+                            <span className="h6 d-flex link">
                                 {linkName}
                             </span>
                         </NavLink>

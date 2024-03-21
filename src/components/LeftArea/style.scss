@@ -1,69 +1,67 @@
+// VarColors:
 $dark-background: #121212;
 $dark-element: #464444;
 $dark-box-color: #242424;
 $white-text: #FFF;
 
-.NavBox {
+// For every Element:
+.linksDefaultColor {
+    color: $dark-element;
+}
+
+// UpperMenu:
+.upperMenu {
+    padding-left: 1vh;
+    padding-top: 1vh;
+    border-radius: 1vh
+}
+.spotifyLogo {
+    width: 10vh;
+}
+.nav-link {
+    width: 100%;
+    gap: 2vh;
     display: flex;
+    align-items: center;
+}
+.nav-link:hover {
+    color: $white-text;
+}
+
+// LowerMenu:
+
+.box {
+    color: $white-text;
+    // padding: 1rem;
+    border-radius: 1vh;
+    background-color: $dark-box-color;
+}
+
+.flexrow{
+    width: 90%;
+    flex-direction: row;
+}
+
+.flexRowSmall{
+    width: 25%;
+    display: flex;
+}
+
+.leftArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $dark-background;
-    padding: 1rem;
-    font-size: 3vh;
-    gap: 1vh;
-    border-radius: 2vh;
-    max-height:50vh;
+    
+}
 
-    a {
-        color: $dark-element;
-    }
-
-    .title {
-        padding-left: 2vh;
-    }
-
-    .lowerBox {
-        height: 10vh;
-        display: flex;
-    }
-
-    .navItemPlaylist {
-        display: flex;
-        
-        justify-content: space-between;
-    }
-
-    .box {
-        color: $white-text;
-        padding: 1rem;
-        border-radius: 2vh;
-        background-color: $dark-box-color;
-    }
-
-    .boxArea {
-        max-height: 40vh;
-        overflow: auto;
-
-        &::-webkit-scrollbar {
-            width: 10px;
-            margin: 1rem;
-            padding: 1rem;
-            border-radius: 1vh;
-        }
-
-        &::-webkit-scrollbar-track {
-            background: $dark-element;
-            border-radius: 10vh;
-        }
-    }
-
-    .linkBox{
-        padding-top: 5vh;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1vh;
-        padding-bottom: 1vh;
-    }
-
-    .nav-link:hover{
-        color: $white-text;
+.linkBox {
+    padding-top: 2vh;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 1vh;
+    .link{
+        width: 100%;
     }
 }

@@ -8,18 +8,17 @@ function App() {
 
   return (
     <>
-      <Container fluid className=''>
-        <Row>
+      <Container fluid className='d-block'>
+        <Row className=''>
           <Col className="LeftArea">
             <UpperNav />
             <LowerNav />
           </Col>
-          <Col xs={9} className='Column'>
+          <Col className='d-flex'>
             <MenuArea />
           </Col>
         </Row>
         <SpotifyAD />
-
       </Container>
     </>
   )

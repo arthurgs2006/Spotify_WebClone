@@ -4,25 +4,20 @@ $dark-box-color: #242424;
 $white-text: #FFF;
 
 .NavBox {
-    display: flex;
     background-color: $dark-background;
-    // padding: 1rem;
-    font-size: 3vh;
-    gap: 1vh;
-    border-radius: 2vh;
-    max-height:50vh;
+    max-width: 45vh; 
+    // 32vh;
 }
-.box {
+.menuArea {
     color: $white-text;
-    // padding: 1vh;
-    border-radius: 2vh;
-    background-color: $dark-background;
+    // padding: 1rem;
+    width: 100%;
+    border-radius: 1vh;
+    background-color: $dark-box-color;
 }
-
 .boxArea {
     max-height: 40vh;
     overflow: auto;
-
     &::-webkit-scrollbar {
         width: 10px;
         margin: 1rem;
@@ -37,3 +32,6 @@ $white-text: #FFF;
     
 }
 
+.navLinkArea{
+    background-color: $dark-background;
+}

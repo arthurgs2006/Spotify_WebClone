@@ -1,21 +1,21 @@
-import { Nav, NavLink, NavItem } from "reactstrap"
+import { Nav, NavLink } from "reactstrap"
 import './style.scss'
+import spotifyLogo from '../../../public/spotifyLogoWhite.png'
 
 export default function () {
     return (
         <>
-            <Nav className="card d-flex NavBox">
-                <NavLink href="/" className="nav-link">
-                    <i className="bi bi-spotify icon"></i>
-                    <b className=" title">Spotify</b>
+            <Nav className="d-flex NavBox upperMenu">
+                <NavLink href="/" className="nav-link ">
+                    <img src={spotifyLogo} alt="Spotify Logo" className="img-fluid spotifyLogo" />
                 </NavLink>
-                <NavLink href="/" className="nav-link">
-                    <i className="bi bi-house-fill icon"></i>
-                    <b className="title ">Home</b>
+                <NavLink href="/" className="nav-link linksDefaultColor">
+                    <i class="bi bi-house-door-fill h4"></i>
+                    <b className="h5">Home</b>
                 </NavLink>
-                <NavLink href="/search" className="nav-link">
-                    <i className="bi bi-search icon"></i>
-                    <b className="title "  >Search</b>
+                <NavLink href="/search" className="nav-link linksDefaultColor">
+                    <i className="bi bi-search icon h4"></i>
+                    <b className="h5"  >Search</b>
                 </NavLink>
             </Nav>
         </>
