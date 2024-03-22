@@ -2,6 +2,7 @@ $dark-background: #121212;
 $dark-element: #464444;
 $dark-box-color: #242424;
 $white-text: #FFF;
+$card-Songs-Bg: transparent;
 
 .NavBox {
     background-color: $dark-background;
@@ -10,10 +11,9 @@ $white-text: #FFF;
 }
 .menuArea {
     color: $white-text;
-    // padding: 1rem;
     width: 100%;
     border-radius: 1vh;
-    background-color: $dark-box-color;
+    background: linear-gradient($dark-box-color, $dark-background);
 }
 .boxArea {
     max-height: 40vh;
@@ -31,7 +31,80 @@ $white-text: #FFF;
     }
     
 }
+.rowArtistsCard{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100% ;
+    min-width: 20vh;
+    &::-webkit-scrollbar {
+        width: 10px;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1vh;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $dark-element;
+        border-radius: 10vh;
+    }
+}
 
 .navLinkArea{
     background-color: $dark-background;
+}
+
+.linkMenuSongList{
+    width: auto;
+}
+
+.songCard{
+    display: flex;
+    box-shadow: $dark-background 1vh 1vh 1vh;
+    flex-wrap: nowrap;
+    max-width: 20vh;
+    flex-direction: column;
+    background-color: transparent;
+    color: $white-text;
+    border: 0;
+    button{
+        float: right;
+    }
+    &:hover{
+        background-color: $dark-box-color;
+        transition: 0.25s;
+    }
+}
+
+@media (max-width: 1223px) {
+    .rowArtistsCard{
+        overflow-x: scroll;
+        max-width: 70vh ;
+    }
+}
+
+@media (max-width: 992px) {
+    .rowArtistsCard{
+        overflow-x: scroll;
+        max-width: 50vh ;
+    }
+}
+
+@media (max-width: 790px) {
+    .rowArtistsCard{
+        overflow-x: scroll;
+        max-width: 30vh ;
+    }
+}
+@media (max-width: 604px) {
+    .rowArtistsCard{
+        overflow-x: scroll;
+        max-width: 20vh ;
+    }
+}
+@media (max-width: 504px) {
+    .rowArtistsCard{
+        overflow-x: scroll;
+        max-width: 35vh ;
+    }
 }

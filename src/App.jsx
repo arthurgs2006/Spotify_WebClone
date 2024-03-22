@@ -14,7 +14,7 @@ function App() {
             <UpperNav />
             <LowerNav />
           </Col>
-          <Col className='d-flex'>
+          <Col className='d-flex pt-1'>
             <MenuArea />
           </Col>
         </Row>

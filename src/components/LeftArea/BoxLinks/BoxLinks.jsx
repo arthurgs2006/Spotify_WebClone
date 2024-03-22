@@ -7,7 +7,7 @@ export default function () {
             <div className="linkBox container">
                 {links.map((linkName, index) => (
                     <>
-                        <NavLink key={index} >
+                        <NavLink key={index + 1} >
                             <span className="h6 d-flex link">
                                 {linkName}
                             </span>

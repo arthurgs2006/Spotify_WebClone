@@ -1,4 +1,4 @@
-import { Nav, NavLink, NavItem, Container, Button, Row } from "reactstrap"
+import { Nav, NavLink, NavItem, Container, Button } from "reactstrap"
 import BoxLinks from "./BoxLinks/BoxLinks"
 import './style.scss'
 
@@ -6,10 +6,10 @@ export default function () {
     return (
         <>
             <div className="card d-flex NavBox lowerBox">
-                <Nav className="">
+                <Nav >
                     <NavLink href="/" className="linksDefaultColor  pt-3 ">
-                            <i class="bi bi-file-earmark-music-fill h4 "></i>
-                            <b className="h5 flexrow">Your Library</b>
+                        <i class="bi bi-collection-play-fill h4 "></i>
+                        <b className="h5 flexrow">Your Library</b>
                         <NavLink href="/" className="linksDefaultColor flexRowSmall">
                             <i className="bi bi-plus-lg h4 "></i>
                         </NavLink>
