@@ -10,7 +10,6 @@ O Spotify Web Clone é um projeto individual que visa a prática e apresentar me
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="20px"/>
 </div>
 
-# Spotify Web Clone
 ## English Version
 
 The Spotify Web Clone is an individual project aimed at practicing and showcasing my development over time through classes and specialties. To accomplish this, I worked with Vite, using ReactJS, Sass, and Bootstrap for creating components and styling each one. Although it is a clone of the Spotify website, the project does not feature all the peculiarities, such as full functionality and features, only the styling part. However, new features will be added over time, bringing new aspects and distinct elements from what is already present in the version. For viewing, access the project hosted on the Vercel website, which features responsiveness and full performance worked on during its production.
